@@ -1,0 +1,97 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  border-radius: 4px;
+}
+
+.table-header,
+.table-body {
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  color: #444;
+  background-color: #fff;
+  overflow: auto;
+  transition: all 150ms ease-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.table-header {
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+  min-height: 50px;
+  cursor: auto;
+}
+
+.table-header.dark {
+  background-color: #7d7b7b !important;
+}
+
+.table-header .table-cell {
+  color: #fff;
+}
+
+.table-body:hover {
+  background-color: #efefef;
+}
+
+.boder-bottom {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.no-data {
+  min-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-cell {
+  min-width: 80px;
+  padding: 8px 16px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.topic-selected {
+  background-color: #cbcbcb !important;
+  font-weight: 600;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-main {
+  background-color: #fff;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #444444;
+  padding: 8px 4px;
+  font-size: 16px;
+  color: #444444;
+  width: 100%;
+  margin-bottom: 20px;
+}
